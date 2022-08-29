@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+
+    <h1>Sub Shop</h1>
+
+    <div class="mainContainer">
+
+        <div class="containerLeft">
+        
+            <form>
+                <div class="bread">
+                    <h4>Choose your bread</h4>
+                    <input id="whiteBread" name="bread" type="radio" value="White">
+                    <label for="whiteBread">White</label>
+                    <input id="wheatBread" name="bread" type="radio" value="Wheat">
+                    <label for="wheatBread">Wheat</label>
+                    <input id="ryeBread" name="bread" type="radio" value="Rye">
+                    <label for="ryeBread">Rye</label>
+                </div>
+                <div class="protein">
+                    <h4>Pick your protein</h4>
+                    <input id="chickenProtein" name="protein" type="radio" value="Chicken">
+                    <label for="chickenProtein">Chicken</label>
+                    <input id="turkeyProtein" name="protein" type="radio" value="Turkey">
+                    <label for="turkeyProtein">Turkey</label>
+                    <input id="hamProtein" name="protein" type="radio" value="Ham">
+                    <label for="hamProtein">Ham</label>
+                </div>
+                <div class="toppings">
+                    <h4>Which toppings would you like?</h4>
+                    <ul>
+                        <li>
+                            <input id="americanCheese" name="toppings" type="checkbox" value="American Cheese">
+                            <label for="americanCheese">American Cheese</label>
+                        </li>
+                        <li>
+                            <input id="provoloneCheese" name="toppings" type="checkbox" value="Provolone Cheese">
+                            <label for="provoloneCheese">Provolone Cheese</label>
+                        </li>
+                        <li>
+                            <input id="greenBellPeppers" name="toppings" type="checkbox" value="Green Bell Peppers">
+                            <label for="greenBellPeppers">Green Bell Peppers</label>
+                        </li>
+                        <li>
+                            <input id="onions" name="toppings" type="checkbox" value="Onions">
+                            <label for="onions">Onions</label>
+                        </li>
+                        <li>
+                            <input id="blackOlives" name="toppings" type="checkbox" value="Black Olives">
+                            <label for="blackOlives">Black Olives</label>
+                        </li>
+                        <li>
+                            <input id="mustard" name="toppings" type="checkbox" value="Mustard">
+                            <label for="mustard">Mustard</label>
+                        </li>
+                        <li>
+                            <input id="mayonnaise" name="toppings" type="checkbox" value="Mayonnaise">
+                            <label for="mayonnaise">Mayonnaise</label>
+                        </li>
+                    </ul>
+                </div>
+                <button id="submitButton" type="button">Place Order</button>
+            </form>
+
+        </div>
+
+        <div class="containerRight">
+            <h2>Current Orders</h2>
+            <div id="orders"></div>
+        </div>
+
+    </div>
+    
+    <script type="module" src="./scripts/main.js"></script>
+</body>
+</html>
