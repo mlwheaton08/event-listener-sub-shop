@@ -7,6 +7,10 @@ const orders = [
     }
 ]
 
+export const addNewOrder = (newOrder) => {
+    orders.push(newOrder)
+}
+
 export const getOrders = () => {
     return orders.map(order => ({...order}))
 }
