@@ -9,6 +9,7 @@ const orders = [
 
 export const addNewOrder = (newOrder) => {
     orders.push(newOrder)
+    document.dispatchEvent(new CustomEvent("stateChanged"))
 }
 
 export const getOrders = () => {
